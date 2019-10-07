@@ -1,0 +1,15 @@
+version: '3.4'
+
+services:
+  web:
+    image: ${DOCKER_REGISTRY-}web
+    build:
+      context: .
+      dockerfile: Web/Dockerfile
+
+  microservice:
+    image: ${DOCKER_REGISTRY-}microservice
+    build:
+      context: .
+      dockerfile: MicroService/Dockerfile
+
