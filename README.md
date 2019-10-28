@@ -1,4 +1,4 @@
-# Microservice-With-Docker-Demo
+# Microservice with Docker demo
 
 Example of how to work with a web application and a microservice as separate containers in Visual Studio.
 
