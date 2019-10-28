@@ -1,6 +1,6 @@
 using System;
 
-namespace MicroService.Features.WeatherForecast
+namespace Microservice.Features.WeatherForecast
 {
     public class WeatherForecastModel
     {

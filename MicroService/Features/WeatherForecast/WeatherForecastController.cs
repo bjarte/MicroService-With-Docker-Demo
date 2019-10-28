@@ -3,7 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 
-namespace MicroService.Features.WeatherForecast
+namespace Microservice.Features.WeatherForecast
 {
     [ApiController]
     [Route("[controller]")]

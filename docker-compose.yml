@@ -11,5 +11,5 @@ services:
     image: ${DOCKER_REGISTRY-}microservice
     build:
       context: .
-      dockerfile: MicroService/Dockerfile
+      dockerfile: Microservice/Dockerfile
 
