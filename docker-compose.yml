@@ -5,11 +5,11 @@ services:
     image: ${DOCKER_REGISTRY-}web
     build:
       context: .
-      dockerfile: Web/Dockerfile
+      dockerfile: src/Web/Dockerfile
 
   microservice:
     image: ${DOCKER_REGISTRY-}microservice
     build:
       context: .
-      dockerfile: Microservice/Dockerfile
+      dockerfile: src/Microservice/Dockerfile
 
