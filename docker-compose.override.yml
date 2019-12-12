@@ -1,6 +1,7 @@
-version: '3.4'
+version: '3.7'
 
 services:
+
   web:
     environment:
       - ASPNETCORE_ENVIRONMENT=Development
@@ -8,6 +9,7 @@ services:
       - "6100:80"
     volumes:
       - ${APPDATA}/Microsoft/UserSecrets:/root/.microsoft/usersecrets:ro
+
   microservice:
     environment:
       - ASPNETCORE_ENVIRONMENT=Development

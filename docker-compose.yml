@@ -1,6 +1,7 @@
-version: '3.4'
+version: '3.7'
 
 services:
+
   web:
     image: ${DOCKER_REGISTRY-}web
     build:
@@ -12,4 +13,3 @@ services:
     build:
       context: .
       dockerfile: src/Microservice/Dockerfile
-
