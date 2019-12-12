@@ -10,6 +10,8 @@ namespace Web
     {
         public void ConfigureServices(IServiceCollection services)
         {
+            services.AddCors();
+
             services
                 .AddControllersWithViews()
                 .AddFeatureFolders();
@@ -21,6 +23,11 @@ namespace Web
             {
                 app.UseDeveloperExceptionPage();
             }
+
+            app.UseCors(builder => builder
+                .AllowAnyOrigin()
+                .AllowAnyHeader()
+                .AllowAnyMethod());
 
             app.UseRouting();
 
